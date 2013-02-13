@@ -1,5 +1,10 @@
 <?php
 
+namespace Psr\Form;
+
+/**
+ * Strategy pattern
+ */
 interface Rule{
     /**
      * Sanitize user input
