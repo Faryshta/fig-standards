@@ -14,7 +14,7 @@ interface Rule{
      * @param string $value
      * @return string
      */
-    public sanitize($value);
+    public function sanitize($value);
 
     /**
      * Validate sanitized input
@@ -22,7 +22,7 @@ interface Rule{
      * @param string $value
      * @throw RuntimeException
      */
-    public validate($value);
+    public function validate($value);
 
     /**
      * Takes a value to display to the user
@@ -33,5 +33,5 @@ interface Rule{
      * @param string $value
      * @return string
      */
-    public draw($value);
+    public function draw($value);
 }
