@@ -4,26 +4,6 @@ namespace Psr\Form;
 
 interface Field{
     /**
-     * @var string
-     */
-    public $name = '';
-
-    /**
-     * @var mixed
-     */
-    public $value = '';
-
-    /**
-     * @var SplObjectStorage
-     */
-    protected $rules = null;
-
-    /**
-     * Construct $rules as SplObjectStorage instance
-     */
-    public function __construct($name, $value);
-
-    /**
      * Sanitizes $value
      */
     public function sanitize();
